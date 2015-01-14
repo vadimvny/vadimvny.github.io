@@ -256,8 +256,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/contact.jpg) no-repeat center center scroll;
-    background-color: #000;
+    background: url(../img/verrazano.jpg) no-repeat center center scroll;
+    background-color: #11505d;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -297,7 +297,7 @@ a:focus {
 
 .btn-default {
     border: 1px solid #219ab3;
-    color: black;
+    color: #ffcc66;
     background-color: transparent;
 }
 
@@ -369,9 +369,9 @@ body {
 }
 
 .bb-nyc {
-    height: 100px;
+    height: 180px;
 }
 
 .news-bubble {
-    height: 100px;
+    height: 180px;
 }

@@ -36,12 +36,23 @@ p {
     line-height: 1.5;
 }
 
+
+
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
     }
+
+    ul.three-up { 
+      width: 1091px;
+      float: left;
+      margin: 3px -9px 9px -198px;
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+    } 
 }
 
 a {
@@ -314,11 +325,11 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:1199px) {
-    ul.banner-social-buttons {
+ul.banner-social-buttons {
         margin-top: 15px;
     }
-}
 
+}
 @media(max-width:767px) {
     ul.banner-social-buttons li {
         display: block;
@@ -374,4 +385,12 @@ body {
 
 .news-bubble {
     height: 180px;
+}
+
+li.dream {
+  margin: 0px -19px 3px 2px;
+}
+
+li.mobile {
+      margin: 0px 7px 5px 49px;
 }

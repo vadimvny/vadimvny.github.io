@@ -121,6 +121,32 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+/*------------------------------
+Video
+-----------------------------------*/
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------------------------
+About
+-----------------------------------------------*/
+#about h2, h3, p {
+    color: black;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -394,3 +420,4 @@ li.dream {
 li.mobile {
       margin: 0px 7px 5px 49px;
 }
+

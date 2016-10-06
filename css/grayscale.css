@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: 'VCR';
-  src: url('../fonts//VCROSDMono.woff') format('woff'),
+  src: url('../fonts/VCROSDMono.woff') format('woff'),
        url('../fonts/VCROSDMono.ttf') format('truetype'),
-       url('.//fonts/VCROSDMono.svg#VCROSDMono') format('svg');
+       url('../fonts/VCROSDMono.svg#VCROSDMono') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -194,7 +194,6 @@ About
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/background-img.jpeg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

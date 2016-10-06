@@ -28,7 +28,7 @@ body {
     height: 100%;
     font-family: 'VCR',"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #11505d;
+    background-color: #000;
 }
 
 html {
@@ -427,3 +427,6 @@ li.mobile {
       margin: 0px 7px 5px 49px;
 }
 
+ul.rslides_tabs.rslides1_tabs {
+    display: none;
+}

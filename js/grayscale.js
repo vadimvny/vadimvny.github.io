@@ -23,11 +23,8 @@ $(function() {
         event.preventDefault();
     });
     $(".portfolio-slider").responsiveSlides({
-        nav: true,
         pager: true,  
-
     });
-
 });
 
 // Closes the Responsive Menu on Menu Item Click

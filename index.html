@@ -128,7 +128,11 @@
     <script src="js/grayscale.js"></script>
     <script>
         $(function() {
-           $('ul.three-up').fullpage();
+           $('ul.three-up').fullpage({
+             loopHorizontal: true,
+             scrollingSpeed: 700,
+             autoScrolling: true,
+           });
         });
     </script>
 </body>

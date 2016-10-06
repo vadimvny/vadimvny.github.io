@@ -22,7 +22,7 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    $(".three-up").responsiveSlides({
+    $(".portfolio-slider").responsiveSlides({
         nav: true,
         pager: true,  
 

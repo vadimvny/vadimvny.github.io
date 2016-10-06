@@ -22,7 +22,11 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    $(".three-up").responsiveSlides();
+    $(".three-up").responsiveSlides({
+        nav: true,
+        pager: true,  
+
+    });
 
 });
 

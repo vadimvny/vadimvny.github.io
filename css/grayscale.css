@@ -75,7 +75,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #fff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -209,9 +209,26 @@ About
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 24px;
+        font-size: 2.0em;
+        overflow: hidden;
+        border-right: .15em solid #fff;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        color: #fff;
+        max-width: 575px;
     }
-
+   
+   @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+   } 
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    } 
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
@@ -316,7 +333,7 @@ About
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 50px;
     }
 
     .download-section {
@@ -429,4 +446,128 @@ li.mobile {
 
 ul.rslides_tabs.rslides1_tabs {
     display: none;
+}
+.portfolio__h2 {
+    margin-bottom: 50px;
+}
+li.portolio__content__slide {
+    max-width: 996px;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+}
+li.portolio__slide__previous {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform:translateY(-50%);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    color: #111;
+    background: #fff;
+    padding: 10px 0;
+    width: 100px;
+    cursor: pointer;
+}
+li.portolio__slide__next {
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform:translateY(-50%);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(-90deg);
+    color: #111;
+    background: #fff;
+    padding: 10px 0;
+    width: 100px;
+    cursor: pointer;
+}
+li.portolio__content__slide img {
+    max-width: 100%;
+    height: auto;
+}
+ul.portfolio__content {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    margin: 0 15px;
+}
+
+span.slide__span__box {
+    color: #000;
+    background: #fff;
+    padding: 10px 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: -27px;
+    width: 150px;
+}
+
+@media (max-width: 766px) {
+    li.portolio__content__slide {
+        height: 172px;
+        overflow: hidden;
+
+    }
+    li.portolio__slide__previous {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform:translateY(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        -webkit-transform: rotate(0);
+        color: #111;
+        background: #fff;
+        padding: 5px 0;
+        width: 100px;
+        cursor: pointer;
+        width: 48%;
+        display: inline-block;
+    }
+    li.portolio__slide__next {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform:translateY(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        -webkit-transform: rotate(0);
+        color: #111;
+        background: #fff;
+        padding: 5px 0;
+        width: 100px;
+        cursor: pointer;
+        width: 48%;
+        display: inline-block;
+    }
 }

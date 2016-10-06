@@ -22,11 +22,42 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    $(".portfolio-slider").responsiveSlides({
-        nav: false,
-        pager: true,  
+    
+   var currentIndex = 0,
+   items = $('.portfolio__content li.portolio__content__slide'),
+   itemAmt = items.length;
 
+    function cycleItems() {
+      var item = $('.portfolio__content li.portolio__content__slide').eq(currentIndex);
+      items.hide();
+      item.css('display','inline-block');
+    }
+
+    var autoSlide = setInterval(function() {
+      currentIndex += 1;
+      if (currentIndex > itemAmt - 1) {
+        currentIndex = 0;
+      }
+      cycleItems();
+    }, 100000);
+
+    $('li.portolio__slide__next').click(function() {
+      clearInterval(autoSlide);
+      currentIndex += 1;
+      if (currentIndex > itemAmt - 1) {
+        currentIndex = 0;
+      }
+      cycleItems();
     });
+
+    $('li.portolio__slide__previous').click(function() {
+      clearInterval(autoSlide);
+      currentIndex -= 1;
+      if (currentIndex < 0) {
+        currentIndex = itemAmt - 1;
+      }
+      cycleItems();
+    }); 
 
 });
 
